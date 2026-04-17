@@ -3,12 +3,15 @@ body {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 header {
     display: flex;
     height: 7vh;
     width: 100vw;
     background-color:antiquewhite;
-    align-items: center;
     flex-direction: row;
 }
 
@@ -37,21 +40,74 @@ main {
     height: 93vh;
 }
 
-main section .products {
+.products {
     display: flex;
     flex-wrap: wrap;
+    align-content:start;
     background-color: gray; 
     height: 93vh;
     width: 60vw;
 }
 
-main section .products .product {
+.product {
+    display: flex;
+    align-content:end;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: white;
-    width: 15vh;
-    height: 15vh;
+    width: 20vh;
+    height: 20vh;
     margin: 1%;
     min-width: 100px;
     max-width: 200px;
+}
+
+.product-info {
+    background-color:antiquewhite;
+    width: 20vh;
+    height: 9vh;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.name-base {
+    background-color:rgb(127, 255, 251);
+    width: 20vh;
+    height: 3vh;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.price-base {
+    background-color:aquamarine;
+    width: 20vh;
+    height: 3vh;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.description-base {
+    background-color:rgb(127, 255, 182);
+    width: 20vh;
+    height: 3vh;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+p {
+    line-height: 3vh;
+}
+
+.product-img {
+    width: 20vh;
+    height: 11vh;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.product-img img {
+    width: 20vh;
+    height: 11vh;
 }
 
 main section .side-menu {
