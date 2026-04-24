@@ -112,9 +112,16 @@ p {
 
 main section .side-menu {
     display: flex;
+    flex-wrap: wrap;
     height: 93vh;
     width: 15vw;
     background-color:cornflowerblue;
+}
+
+.category {
+    width: 15vw;
+    height: 10%;
+    margin: 5%;
 }
 
 main section .filters {
@@ -122,6 +129,12 @@ main section .filters {
     height: 93vh;
     width: 25vw;
     background-color:beige;
+}
+
+.form {
+    width: 50%;
+    height: 2%;
+    outline: 1px solid;
 }
 
 section .about {
