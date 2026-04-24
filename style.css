@@ -13,11 +13,12 @@ header {
     width: 100vw;
     background-color:antiquewhite;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 header li {
     display: flex;
-    align-items: center;
 }
 
 header li a {
@@ -30,9 +31,25 @@ header li a {
     color: black;
 }
 
-header .logo {
-    margin-right: 5vw;
+.logo {
+    margin-right: auto;
+    margin-left: 2vw;
     height: 5vh;
+}
+
+.cart {
+    margin-left: auto;
+    height: 5vh;
+    margin-right: 2vw;
+}
+
+.cart-view {
+    width: 5vw;
+    height: 10vh;
+    position: fixed;
+    x: 50vw;
+    y: 50vh;
+    background-color: white;
 }
 
 main {
@@ -113,6 +130,7 @@ p {
 main section .side-menu {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     height: 93vh;
     width: 15vw;
     background-color:cornflowerblue;
@@ -121,7 +139,10 @@ main section .side-menu {
 .category {
     width: 15vw;
     height: 10%;
-    margin: 5%;
+    margin: 5% 0;
+    align-content: center;
+    text-align: center;
+    font-size: 2vw;
 }
 
 main section .filters {
@@ -134,7 +155,7 @@ main section .filters {
 .form {
     width: 50%;
     height: 2%;
-    outline: 1px solid;
+    border-radius: 10%;
 }
 
 section .about {
