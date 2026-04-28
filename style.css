@@ -27,7 +27,7 @@ header li a {
     padding-left: 10%;
     padding-right: 10%;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 3vh;
     color: black;
 }
 
@@ -40,16 +40,42 @@ header li a {
 .cart {
     margin-left: auto;
     height: 5vh;
-    margin-right: 2vw;
+    margin-right: 7.5vw;
+    cursor: pointer;
 }
 
-.cart-view {
-    width: 5vw;
-    height: 10vh;
-    position: fixed;
-    x: 50vw;
-    y: 50vh;
+.cart-div {
+    display: none;
+    flex-direction: column;
+    width: 15vw;
+    height: 30vh;
+    position:fixed;
+    top: 7vh;
+    right: 2vw;
     background-color: white;
+}
+
+.cart-items {
+    display: flex;
+    width: 15vw;
+    height: 20vh;
+    background-color: gray;
+    overflow-y: scroll;
+}
+
+.cart-checkout {
+    width: 15vw;
+    height: 7vh;
+    margin-top: 1.5vh;
+    background-color: green;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.cart-checkout p {
+    color: white;
+    font-size: 2vw;
 }
 
 main {
@@ -162,4 +188,16 @@ section .about {
     display: flex;
     background-color: black;
     height: 50vh;
+}
+
+@media screen and (max-width: 600px) {
+    header li a {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+    }
 }
