@@ -18,6 +18,16 @@ cart.addEventListener("click", function (e) {
     }
 })
 
+document.addEventListener("click", function(e){
+    console.log(e)
+    console.log(e.target)
+    if (!cartDiv.contains(event.target) && !cart.contains(event.target)) {
+        console.log("clicked outside cart div")
+        cartDivVisible = false
+        cartDiv.style.display = "none"
+    }
+})
+
 checkout.addEventListener("click", function (e) {
     window.location.href = "/checkout.html";
 })

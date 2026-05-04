@@ -105,7 +105,7 @@ main {
     height: 25vh;
     margin: 1%;
     min-width: 100px;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 .add-to-cart {
@@ -115,11 +115,18 @@ main {
     cursor: pointer;
     text-align: center;
     align-content: center;
+    min-width: 100px;
+    max-width: 500px;
 }
 
 .add-to-cart p {
     color: white;
-    font-size: 3vh;
+    font-size: 2vh;
+    min-width: 100px;
+    max-width: 500px;
+    max-height: 5vh;
+    white-space: nowrap;
+    overflow-x: hidden;
 }
 
 .product-info {
@@ -127,7 +134,7 @@ main {
     width: 20vh;
     height: 9vh;
     min-width: 100px;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 .name-base {
@@ -135,7 +142,7 @@ main {
     width: 20vh;
     height: 3vh;
     min-width: 100px;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 .price-base {
@@ -143,7 +150,7 @@ main {
     width: 20vh;
     height: 3vh;
     min-width: 100px;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 .created-base {
@@ -154,19 +161,23 @@ main {
     width: 20vh;
     height: 3vh;
     min-width: 100px;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 .created-label {
     font-size: 1.5vh;
+    white-space: nowrap;
+    overflow-x: hidden;
 }
 
 .created-person {
     font-size: 1.8vh;
     font-weight: bold;
+    overflow-x: hidden;
 }
 
 p {
+    font-size: 1.5vh;
     line-height: 3vh;
 }
 
@@ -174,12 +185,14 @@ p {
     width: 20vh;
     height: 11vh;
     min-width: 100px;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 .product-img img {
     width: 20vh;
     height: 11vh;
+    min-width: 100px;
+    max-width: 500px;
 }
 
 main section .side-menu {
@@ -208,9 +221,12 @@ main section .filters {
 }
 
 .form {
-    width: 50%;
+    width: 20vw;
     height: 2%;
-    border-radius: 10%;
+}
+
+form label {
+    font-size: 2vh;
 }
 
 section .about {
