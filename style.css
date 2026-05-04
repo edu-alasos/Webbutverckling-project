@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mountains+of+Christmas:wght@400;700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=TASA+Explorer:wght@400..800&display=swap');
+
 body {
     padding: 0;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -75,7 +78,7 @@ header li a {
 
 .cart-checkout p {
     color: white;
-    font-size: 2vw;
+    font-size: 3vh;
 }
 
 main {
@@ -99,10 +102,24 @@ main {
     flex-wrap: wrap;
     background-color: white;
     width: 20vh;
-    height: 20vh;
+    height: 25vh;
     margin: 1%;
     min-width: 100px;
     max-width: 200px;
+}
+
+.add-to-cart {
+    width: 20vh;
+    height: 5vh;
+    background-color: green;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+}
+
+.add-to-cart p {
+    color: white;
+    font-size: 3vh;
 }
 
 .product-info {
@@ -129,12 +146,24 @@ main {
     max-width: 200px;
 }
 
-.description-base {
+.created-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color:rgb(127, 255, 182);
     width: 20vh;
     height: 3vh;
     min-width: 100px;
     max-width: 200px;
+}
+
+.created-label {
+    font-size: 1.5vh;
+}
+
+.created-person {
+    font-size: 1.8vh;
+    font-weight: bold;
 }
 
 p {
