@@ -21,7 +21,6 @@ body {
 
 .info {
     display: flex;
-    background-color: bisque;
     height: 20vh;
     width: 60vw;
     margin-top: 5%;
@@ -83,24 +82,58 @@ body {
     width: 100%;
 }
 
-.reviewer {
-    background-color: rgb(209, 209, 209);
+.review-profile {
+    display: flex;
+    background-color: rgb(66, 66, 66);
+    height: 30%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-profile img {
+    width: 25%;
+    height: 50%;
+    border-radius: 100%;   
+}
+
+.review-profile h1 {
+    color: white;
+    font-size: 1.5vh;
+    margin: 0;
+}
+
+.review-profile h2 {
+    color: white;
+    font-size: 0.8vh;
+    margin: 0;
+}
+
+.review-message {
+    background-color: rgb(216, 216, 216);
     height: 30%;
     width: 100%;
     align-content: center;
 }
 
-.reviewer img {
-    width: 25%;
-    height: 50%;
-    border-radius: 100%;
-    
+.review-message h1 {
+    font-size: 3vh;
+    text-align: center;
+    margin: 0;
 }
 
-.review h1 {
-
+.review-message .rating{
+    height: 20%;
+    text-align: center;
 }
 
-.review h2 {
-    
+.review-message .rating p{
+    font-size: 2.5vh;
+}
+
+.review-message h2 {
+    font-size: 1vh;
+    margin: 0;
 }
