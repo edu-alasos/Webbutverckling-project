@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    background-color: burlywood;
 }
 
 p {
@@ -22,6 +23,7 @@ header {
 
 header li {
     display: flex;
+    justify-content: center;
 }
 
 header li a {
@@ -62,7 +64,7 @@ header li a {
     display: flex;
     width: 15vw;
     height: 20vh;
-    background-color: gray;
+    background-color: white;
     overflow-y: scroll;
 }
 
@@ -90,7 +92,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-content:start;
-    background-color: gray; 
+    background-color: rgb(224, 224, 224); 
     height: 93vh;
     width: 60vw;
 }
@@ -201,7 +203,7 @@ main section .side-menu {
     flex-direction: column;
     height: 93vh;
     width: 15vw;
-    background-color:cornflowerblue;
+    background-color:burlywood;
 }
 
 .category {
@@ -217,7 +219,7 @@ main section .filters {
     display: flex;
     height: 93vh;
     width: 25vw;
-    background-color:beige;
+    background-color:burlywood;
 }
 
 .form {
