@@ -71,13 +71,38 @@ header li a {
 
 .cart-item {
     display: flex;
-    margin-bottom: 2vh;
-    background-color: rgb(238, 238, 238);
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    padding: 3%;
+    border-bottom: 1px solid gray;
+    background-color: white;
 }
 
-.cart-item img {
-    width: 20%;
-    height: 50%;
+.cart-item-img {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+
+.cart-item-name {
+    font-size: 1.2vh;
+    font-weight: bold;
+}
+
+.cart-item-price {
+    font-size: 1vh;
+    color: green;
+}
+
+.cart-item-seller {
+    font-size: 1vh;
+    color: gray;
+}
+
+.cart-remove {
+    width: 30px;
+    height: 30px;
     align-self: center;
 }
 
@@ -107,6 +132,7 @@ main {
     background-color: rgb(94, 94, 94); 
     height: 93vh;
     width: 60vw;
+    justify-content: center;
 }
 
 .product {
@@ -221,10 +247,11 @@ main section .side-menu {
 .category {
     width: 15vw;
     height: 10%;
-    margin: 5% 0;
+    margin: 0;
     align-content: center;
     text-align: center;
     font-size: 2vw;
+    border-bottom: 1px solid gray;
 }
 
 main section .filters {

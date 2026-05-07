@@ -15,7 +15,7 @@ async function getData() {
     let time = date.getTime()
 
     let lastFetch = JSON.parse(localStorage.getItem("lastFetchConversions") || '[]')
-    lastFetch.push({conversionRates})
+    lastFetch.push({time})
     localStorage.setItem("lastFetch", JSON.stringify(lastFetch))
 
     return conversionRates
