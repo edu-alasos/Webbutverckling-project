@@ -63,15 +63,14 @@ header li a {
 .cart-items {
     display: flex;
     width: 15vw;
-    height: 20vh;
-    background-color: white;
+    height: 23vh;
+    background-color: rgb(231, 231, 231);
     overflow-y: scroll;
 }
 
 .cart-checkout {
     width: 15vw;
     height: 7vh;
-    margin-top: 1.5vh;
     background-color: green;
     text-align: center;
     align-content: center;
@@ -92,7 +91,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-content:start;
-    background-color: rgb(224, 224, 224); 
+    background-color: rgb(94, 94, 94); 
     height: 93vh;
     width: 60vw;
 }
