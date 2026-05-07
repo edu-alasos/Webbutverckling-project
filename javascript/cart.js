@@ -1,5 +1,6 @@
 let cart = document.getElementsByClassName("cart")[0]
 let cartDiv = document.getElementsByClassName("cart-div")[0]
+let cartItems = document.getElementsByClassName('cart-items')[0]
 let checkout = document.getElementsByClassName("cart-checkout")[0]
 let cartDivVisible = false
 
@@ -19,8 +20,6 @@ cart.addEventListener("click", function (e) {
 })
 
 document.addEventListener("click", function(e){
-    console.log(e)
-    console.log(e.target)
     if (!cartDiv.contains(event.target) && !cart.contains(event.target)) {
         cartDivVisible = false
         cartDiv.style.display = "none"
@@ -30,6 +29,24 @@ document.addEventListener("click", function(e){
 checkout.addEventListener("click", function (e) {
     window.location.href = "/checkout.html";
 })
+
+function updateCart() {
+    let cart = JSON.parse(localStorage.getItem("cart") || '[]')
+
+    cartItems.innerHTML = ''
+
+    cart.forEach((item, index) => {
+        let itemDiv = document.createElement("div")
+        itemDiv.classList.add('cart-item');
+        itemDiv.innerHTML = `
+            <img src="http://localhost:5500/y9DpT.jpg"/>
+            <p>${item.name}</p>
+            <p>${item.price}</p>
+            <p>${item.seller}</p>
+        `;
+        cartItems.appendChild(itemDiv);
+    })
+}
 
 document.querySelectorAll(".add-to-cart").forEach(button => {
     button.addEventListener("click", function (e){
@@ -45,5 +62,9 @@ document.querySelectorAll(".add-to-cart").forEach(button => {
         let cart = JSON.parse(localStorage.getItem("cart") || '[]')
         cart.push({name, price, seller})
         localStorage.setItem("cart", JSON.stringify(cart))
+
+        updateCart()
     })
 })
+
+updateCart()

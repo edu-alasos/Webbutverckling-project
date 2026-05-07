@@ -66,6 +66,19 @@ header li a {
     height: 23vh;
     background-color: rgb(231, 231, 231);
     overflow-y: scroll;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 2vh;
+    background-color: rgb(238, 238, 238);
+}
+
+.cart-item img {
+    width: 20%;
+    height: 50%;
+    align-self: center;
 }
 
 .cart-checkout {
