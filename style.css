@@ -134,6 +134,7 @@ main {
     height: 93vh;
     width: 60vw;
     justify-content: center;
+    overflow-y: scroll;
 }
 
 .product {
