@@ -3,144 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shop - ShopNord</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header>
         <a href="front-page.html" class="logo">
-            <img src="y9DpT.jpg" alt="" class="logo">
+            <img src="images/ShopNordTransparent.png#" alt="ShopNord logo" class="logo">
         </a>
-        <li>
-            <a href="">Checkout</a>
-            <a href="/shop.html">Shop</a>
-            <a href="">Contact</a>
-        </li>
-        <img src="y9DpT.jpg" alt="" class="cart">
+        <nav>
+            <ul>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-wrapper">
+            <img src="images/Cart.png" alt="Shopping cart" class="cart">
+            <span class="cart-badge" id="cart-badge">0</span>
+        </div>
     </header>
 
     <div class="cart-div">
-        <div class="cart-items">
-
+        <div class="cart-header">
+            <span class="cart-header-title">Your Cart</span>
+            <span class="cart-count" id="cart-count">0 items</span>
         </div>
-
-        <div class="cart-checkout">
-            <p>Checkout</p>
+        <div class="cart-items">
+        </div>
+        <div class="cart-footer">
+            <div class="cart-checkout">
+                <p>Checkout</p>
+            </div>
         </div>
     </div>
 
     <main>
-        <section>
-            <div class="side-menu">
-                <div class="category">
-                    <p>category 1</p>
-                </div>
-                <div class="category">
-                    <p>category 2</p>
-                </div>
-                <div class="category">
-                    <p>category 3</p>
-                </div>
-                <div class="category">
-                    <p>category 4</p>
-                </div>
-            </div>
-        </section>
+        <h1 class="shop-title">Shop</h1>
 
-        <section>
-            <div class="products">
-                <div class="product">
-                    <div class="product-img">
-                        <img src="y9DpT.jpg" alt="">
+        <div class="shop-main">
+
+            <section>
+                <div class="products">
+                    <div class="product" data-shipping="true">
+                        <div class="product-img">
+                            <img src="/images/bestcuttingboards-02.webp" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Wooden Cutting Board</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$50.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">John</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                        </div>
                     </div>
-                    <div class="product-info">
-                        <div class="name-base">
-                            <div class=""></div>
-                            <p>item 1</p>
+
+                    <div class="product" data-shipping="true">
+                        <div class="product-img">
+                            <img src="images/M89636s.jpg" alt="Product image">
                         </div>
-                        <div class="price-base">
-                            <p>$50.00</p>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Leather Wallet</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$30.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">James</span>
+                            </div>
                         </div>
-                        <div class="created-base">
-                            <span class="created-label">Created by:</span>
-                            <span class="created-person">John</span>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
                         </div>
                     </div>
-                    <div class="add-to-cart">
-                        <p>Add to Cart</p>
+
+                    <div class="product" data-shipping="true">
+                        <div class="product-img">
+                            <img src="images/undef_src_sa_picid_874660_x_1000_type_whitesh_quality_100_image.webp" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Scented Candle Set</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$25.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">Sarah</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </div>
+
+                    <div class="product" data-shipping="false">
+                        <div class="product-img">
+                            <img src="images/fjaerilsbuske-plant-pot-in-outdoor-blue__1308508_pe939884_s5.avif" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Ceramic Plant Pot</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$75.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">Erik</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </div>
+
+                    <div class="product" data-shipping="true">
+                        <div class="product-img">
+                            <img src="images/images(1).jfif" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Knitted Wool Scarf</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$15.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">Anna</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </div>
+
+                    <div class="product" data-shipping="true">
+                        <div class="product-img">
+                            <img src="images/68_7baf2e82-09f3-4cfb-8905-b3689edf19d4.webp" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Silver Pendant Necklace</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$120.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">Lars</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </div>
+
+                    <div class="product" data-shipping="false">
+                        <div class="product-img">
+                            <img src="images/10293.jpg" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Linen Tote Bag</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$45.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">Maria</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </div>
+
+                    <div class="product" data-shipping="true">
+                        <div class="product-img">
+                            <img src="images/IMG_1647OG.webp" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Oak Serving Tray</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$60.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">Oscar</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </div>
+
+                    <div class="product" data-shipping="true">
+                        <div class="product-img">
+                            <img src="images/hawkGreen.jpg" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Embroidered Cushion</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$90.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">Lena</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </div>
+
+                    <div class="product" data-shipping="false">
+                        <div class="product-img">
+                            <img src="images/MG_6246_6c4ab6b6-5a9e-4a56-9bd9-d1b80083ac96.jpg" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <div class="name-base">
+                                <p>Vintage Denim Jacket</p>
+                            </div>
+                            <div class="price-base">
+                                <p>$35.00</p>
+                            </div>
+                            <div class="created-base">
+                                <span class="created-label">Created by:</span>
+                                <span class="created-person">Björn</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <p>Add to Cart</p>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="product">
-                    <div class="product-img">
-                        <img src="y9DpT.jpg" alt="">
+            <section>
+                <div class="filters">
+                    <h2>Filters</h2>
+                    <div class="currency-selector">
+                        <label for="currency-select">Currency:</label>
+                        <select id="currency-select" class="form">
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="SEK">SEK - Swedish Krona</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="NOK">NOK - Norwegian Krone</option>
+                            <option value="DKK">DKK - Danish Krone</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                        </select>
                     </div>
-                    <div class="product-info">
-                        <div class="name-base">
-                            <div class=""></div>
-                            <p>item 2</p>
-                        </div>
-                        <div class="price-base">
-                            <p>$30.00</p>
-                        </div>
-                        <div class="created-base">
-                            <span class="created-label">Created by:</span>
-                            <span class="created-person">James</span>
-                        </div>
-                    </div>
-                    <div class="add-to-cart">
-                        <p>Add to Cart</p>
-                    </div>
+                    <form>
+                        <label for="search-bar">Search:</label>
+                        <input class="form" type="text" name="search" id="search-bar" placeholder="...">
+                        <label for="minimum-price">Minimum Price:</label>
+                        <input class="form" type="text" name="min" id="minimum-price" placeholder="...">
+                        <label for="maximum-price">Maximum Price:</label>
+                        <input class="form" type="text" name="max" id="maximum-price" placeholder="...">
+                        <label for="by-seller">Search by seller:</label>
+                        <input class="form" type="text" name="seller" id="by-seller" placeholder="...">
+                        <label for="with-shipping">
+                            Exclude without shipping:
+                            <input type="checkbox" name="has-shipping" id="with-shipping">
+                        </label>
+                        <input type="submit" value="Apply">
+                    </form>
                 </div>
+            </section>
+        </div>
 
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-            </div>
-        </section>
-
-        <section>
-            <div class="filters">
-                <form action="">
-                    <label for="search-bar">Search:</label>
-                    <br>
-                    <input class="form" type="text" name="search" id="search-bar" placeholder="...">
-                    <br>
-                    <br>
-                    <label for="minimum-price">Minimum Price:</label>
-                    <br>
-                    <input class="form" type="text" name="min" id="minimum-price" placeholder="...">
-                    <br>
-                    <br>
-                    <label for="maximum-price">Maximum Price:</label>
-                    <br>
-                    <input class="form" type="text" name="max" id="maximum-price" placeholder="...">
-                    <br>
-                    <br>
-                    <label for="by-seller">Search by seller:</label>
-                    <br>
-                    <input class="form" type="text" name="seller" id="by-seller" placeholder="...">
-                    <br>
-                    <br>
-                    <label for="with-shipping">Exclude products without shipping:</label>
-                    <input type="checkbox" name="has-shipping" id="with-shipping">
-                    <br>
-                    <br>
-                    <input type="submit">
-                </form>
-            </div>
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your name">
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="email" placeholder="Your email">
+                <label for="contact-subject">Subject:</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Subject">
+                <label for="contact-message">Message:</label>
+                <textarea id="contact-message" name="message" placeholder="Your message"></textarea>
+                <input type="submit" value="Send Message">
+            </form>
         </section>
     </main>
 
-    <section>
-        <div class="about"></div>
-    </section>
+    <footer>
+        <nav>
+            <a href="front-page.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+        <p class="footer-copyright">© 2026 ShopNord - All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/currency.js"></script>
+    <script src="javascript/filters.js"></script>
 </body>
 </html>
-<script src="javascript/cart.js"></script>
-<script src="javascript/currency.js"></script>

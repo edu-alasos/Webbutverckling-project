@@ -3,83 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="front-page.css">
+    <title>ShopNord</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/front-page.css">
 </head>
 <body>
     <header>
         <a href="front-page.html" class="logo">
-            <img src="y9DpT.jpg" alt="" class="logo">
+            <img src="images/ShopNordTransparent.png#" alt="ShopNord logo" class="logo">
         </a>
-        <li>
-            <a href="">Checkout</a>
-            <a href="/shop.html">Shop</a>
-            <a href="">Contact</a>
-        </li>
-        <img src="y9DpT.jpg" alt="" class="cart">
+        <nav>
+            <ul>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-wrapper">
+            <img src="images/Cart.png" alt="Shopping cart" class="cart">
+            <span class="cart-badge" id="cart-badge">0</span>
+        </div>
     </header>
 
     <div class="cart-div">
+        <div class="cart-header">
+            <span class="cart-header-title">Your Cart</span>
+            <span class="cart-count" id="cart-count">0 items</span>
+        </div>
         <div class="cart-items">
-
         </div>
-
-        <div class="cart-checkout">
-            <p>Checkout</p>
+        <div class="cart-footer">
+            <div class="cart-checkout">
+                <p>Checkout</p>
+            </div>
         </div>
     </div>
 
-    <div class="front-text">
-        <h1>asdasdsadasdsadasdsad</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Odio reprehenderit earum in, aliquid consectetur ex</h2>
-    </div>
+    <main>
+        <section class="front-text">
+        </section>
 
-    <section class="info">
-        <div class="info-label">
-            <h1>3,000+</h1>
-            <h2>Satisfied<br>Customers</h2>
-            <img src="" alt="">
-        </div>
+        <section class="info">
+            <div class="info-label">
+                <h1>3,000+</h1>
+                <h2>Satisfied<br>Customers</h2>
+            </div>
+            <div class="info-label">
+                <h1>10,000+</h1>
+                <h2>Products<br>Sold</h2>
+            </div>
+            <div class="info-label">
+                <h1>4.8/5</h1>
+                <h2>Average Feedback</h2>
+            </div>
+        </section>
 
-        <div class="info-label">
-            <h1>10,000+</h1>
-            <h2>Products<br>Sold</h2>
-        </div>
+        <section class="features">
+            <h2>Why choose ShopNord?</h2>
+            <ul class="features-list">
+                <li>Fast and reliable shipping</li>
+                <li>Over 10,000 products sold</li>
+                <li>Verified sellers only</li>
+                <li>30-day return policy</li>
+            </ul>
+        </section>
 
-        <div class="info-label">
-            <h1>4.8/5</h1>
-            <h2>Average Feedback</h2>
-            <img src="" alt="">
-        </div>
-    </section>
-
-    <section class="reviews">
-        <div class="review">
-
-            <img src="y9DpT.jpg" alt="">
-
-
-            <div class="review-message">
-                <h1>asdasd</h1>
-                <div class="rating" data-rating="5">
-
+        <section class="reviews">
+            <div class="review">
+                <img src="images/image(9).jpg" alt="Product preview">
+                <div class="review-message">
+                    <h1>Amazing quality!</h1>
+                    <div class="rating" data-rating="5"></div>
+                    <h2>Absolutely love the products I found here. The sellers are verified and trustworthy, and shipping was faster than expected. Will definitely be ordering again!</h2>
                 </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolorum corrupti nesciunt necessitatibus similique, aperiam ullam porro doloribus officiis ea alias nam, nemo minima sint quod quae repellat voluptatibus earum?</h2>
+                <div class="review-profile">
+                    <img src="images/1703831323139.jfif" alt="Customer photo">
+                    <h1>John Smith</h1>
+                    <h2>Stockholm, Sweden</h2>
+                </div>
             </div>
-
-            <div class="review-profile">
-                <img src="y9DpT.jpg" alt="">
-                <h1>John Smith</h1>
-                <h2>Stockholm, Sweden</h2>
+            <div class="review">
+                <img src="images/image(10).jpg" alt="Product preview">
+                <div class="review-message">
+                    <h1>Great experience</h1>
+                    <div class="rating" data-rating="5"></div>
+                    <h2>Super easy to navigate and the return policy gave me peace of mind. The item arrived exactly as described. ShopNord is now my go-to for online shopping.</h2>
+                </div>
+                <div class="review-profile">
+                    <img src="images/premium_photo-1689530775582-83b8abdb5020.avif" alt="Customer photo">
+                    <h1>Emil Lindqvist</h1>
+                    <h2>Gothenburg, Sweden</h2>
+                </div>
             </div>
-        </div>
+            <div class="review">
+                <img src="images/image(7).jpg" alt="Product preview">
+                <div class="review-message">
+                    <h1>Highly recommend</h1>
+                    <div class="rating" data-rating="4"></div>
+                    <h2>Found a rare item I had been searching for months. The seller was responsive and the packaging was excellent. Very happy with the whole process!</h2>
+                </div>
+                <div class="review-profile">
+                    <img src="images/1652688555456.jfif" alt="Customer photo">
+                    <h1>Marcus Berg</h1>
+                    <h2>Malmö, Sweden</h2>
+                </div>
+            </div>
+        </section>
 
-        <div class="review"></div>
-        <div class="review"></div>
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your name">
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="email" placeholder="Your email">
+                <label for="contact-subject">Subject:</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Subject">
+                <label for="contact-message">Message:</label>
+                <textarea id="contact-message" name="message" placeholder="Your message"></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
 
-    </section>
+    <footer>
+        <nav>
+            <a href="front-page.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+        <p class="footer-copyright">© 2026 ShopNord - All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/rating.js"></script>
 </body>
 </html>
-
-<script src="javascript/rating.js"></script>

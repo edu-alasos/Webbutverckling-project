@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mountains+of+Christmas:wght@400;700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=TASA+Explorer:wght@400..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    padding-top: 7vh;
+    font-family: "Montserrat", sans-serif;
+    background-color: burlywood;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+p {
+    margin: 0;
+    font-size: 1.5vh;
+    line-height: 3vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 7vh;
+    width: 100%;
+    background-color: antiquewhite;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+header li {
+    display: flex;
+    justify-content: center;
+}
+
+header li a {
+    text-decoration: none;
+    font-size: 3vh;
+    color: black;
+    padding: 6px 16px;
+    transition: color 0.2s;
+}
+
+header li a:hover {
+    color: gray;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 2vw;
+    height: 5vh;
+}
+
+.cart-wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: 7.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.cart {
+    height: 5vh;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+}
+
+footer nav a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 24px;
+    transition: color 0.2s;
+}
+
+footer nav a:hover {
+    color: white;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+@media screen and (max-width: 600px) {
+    header li a {
+        font-size: 18px;
+        padding: 4px 8px;
+    }
+
+    .cart-wrapper {
+        margin-right: 4vw;
+    }
+}

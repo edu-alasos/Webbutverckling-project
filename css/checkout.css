@@ -1,0 +1,163 @@
+.checkout-main {
+    padding-bottom: 0;
+}
+
+.checkout-main h1 {
+    text-align: center;
+    margin: 40px 0 0;
+    font-size: 3vh;
+}
+
+.checkout-main h2 {
+    text-align: center;
+    font-size: 1.8vh;
+    font-weight: normal;
+    color: #555;
+    margin: 8px 0 0;
+}
+
+.order-table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.order-table th,
+.order-table td {
+    padding: 12px 18px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.order-table thead tr {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.order-table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.order-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.order-table tfoot tr {
+    background-color: #2d8a4e;
+    color: white;
+    font-weight: 700;
+}
+
+.checkout-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.checkout-empty-msg {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 20px 0;
+    display: none;
+}
+
+.remove-from-checkout {
+    background: none;
+    border: 1px solid #cc3333;
+    color: #cc3333;
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.remove-from-checkout:hover {
+    background-color: #cc3333;
+    color: white;
+}
+
+.payment-section {
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+.payment-section h2 {
+    font-size: 2vh;
+    margin: 0 0 16px 0;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: antiquewhite;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.payment-form label {
+    font-size: 1.6vh;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.payment-form input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1.6vh;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.payment-form input:focus {
+    outline: none;
+    border-color: #2d8a4e;
+}
+
+.payment-row {
+    display: flex;
+    gap: 16px;
+}
+
+.payment-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 6px;
+}
+
+.pay-btn {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #2d8a4e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1.8vh;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pay-btn:hover {
+    background-color: #1e6638;
+}
+
+@media screen and (max-width: 768px) {
+    .payment-section {
+        width: 90%;
+    }
+
+    .payment-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

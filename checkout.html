@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout - ShopNord</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    
+    <header>
+        <a href="front-page.html" class="logo">
+            <img src="images/ShopNordTransparent.png#" alt="ShopNord logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-wrapper">
+            <img src="images/Cart.png" alt="Shopping cart" class="cart">
+            <span class="cart-badge" id="cart-badge">0</span>
+        </div>
+    </header>
+
+    <div class="cart-div">
+        <div class="cart-header">
+            <span class="cart-header-title">Your Cart</span>
+            <span class="cart-count" id="cart-count">0 items</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-footer">
+            <div class="cart-checkout">
+                <p>Checkout</p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="checkout-main">
+            <h1>Order Summary</h1>
+            <h2>Review your order before completing your purchase</h2>
+
+            <p id="checkout-empty" class="checkout-empty-msg">Your cart is empty.</p>
+
+            <table class="order-table" id="checkout-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Seller</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="checkout-tbody">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td></td>
+                        <td id="checkout-total">$0.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="payment-section">
+            <h2>Payment Details</h2>
+            <form class="payment-form">
+                <label for="card-name">Name on Card:</label>
+                <input type="text" id="card-name" name="card-name" placeholder="John Smith">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+                <div class="payment-row">
+                    <div class="payment-field">
+                        <label for="card-expiry">Expiry Date:</label>
+                        <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div class="payment-field">
+                        <label for="card-cvv">CVV:</label>
+                        <input type="password" id="card-cvv" name="card-cvv" placeholder="123" maxlength="3">
+                    </div>
+                </div>
+                <button type="submit" class="pay-btn">Pay $0.00</button>
+            </form>
+        </div>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your name">
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="email" placeholder="Your email">
+                <label for="contact-subject">Subject:</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Subject">
+                <label for="contact-message">Message:</label>
+                <textarea id="contact-message" name="message" placeholder="Your message"></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="front-page.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+        <p class="footer-copyright">© 2026 ShopNord - All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/checkout.js"></script>
 </body>
 </html>
